@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container d-sm-flex">
         <a class="navbar-brand" href="#">
           <img src="/images/Logo.png" alt="logo" width="170px" />
@@ -28,7 +30,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end align-items-end" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse cssflex" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link fs-6 text-black" aria-current="page" href="#tentang"
@@ -44,9 +46,9 @@
             <li class="nav-item">
               <a class="nav-link fs-6 text-black" href="#membership">Membership</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="/login" class="btn btn-login text-white fw-semibold px-4 py-2 rounded-pill">Login</a>
-            </li>
+            </li> -->
           </ul>
             
 
@@ -55,7 +57,8 @@
     </nav>
 
     <!-- HEADER -->
-    <header id="header" class="vh-auto">
+    <header data-aos="fade-up"
+    data-aos-duration="2000" id="header" class="vh-auto">
       <div class="container mt-5">
         <div class="row mx-4 d-flex align-items-center gap-5 gap-lg-0 ">
           <div class="col-lg-6">
@@ -89,7 +92,8 @@
     </header>
 
       <!-- LIST DATA -->
-    <div id="list-data">
+    <div data-aos="fade-up"
+    data-aos-duration="2000"  id="list-data">
       <div class="container card-list shadow-lg">
         <div class="row g-5">
 
@@ -138,7 +142,8 @@
 
 
       <!-- TENTANG -->
-      <section id="tentang" class="vh-auto">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  id="tentang" class="vh-auto">
         <div class="container">
 
           <h1 class="fs-2 fw-bold">
@@ -224,7 +229,8 @@
 
 
       <!-- PROJECT -->
-      <section id="kegiatan" class="vh-auto">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  id="kegiatan" class="vh-auto">
         <div class="container">
           <div class="row justify-content-end">
               <div class="col-6 text-end">
@@ -342,7 +348,8 @@
 
 
       <!-- MEMBERSHIP -->
-    <section id="membership">
+    <section data-aos="fade-up"
+    data-aos-duration="2000"  id="membership">
       <div class="container">
         <h1 class="fs-1 fw-bold">
           Cara menjadi <span>membership</span> di <br>   GrowDev Community
@@ -410,7 +417,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 
-    <script src="/js/index.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
