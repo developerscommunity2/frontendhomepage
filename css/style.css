@@ -42,6 +42,9 @@ nav{
   display: flex;
   justify-content: end;
 }
+nav ul li{
+  padding: 0px 20px;
+}
 /* header */
 header h1 {
   font-weight: 900;
